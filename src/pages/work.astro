@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Logo from "../components/Logo.astro";
+---
+
+<Layout title="Welcome to AJBC Services.">
+	<main>
+		<Logo />
+		<!-- <h1>Welcome to <span class="text-gradient">AJBC Services</span></h1> -->
+		<!-- tailwind col centered -->
+
+		<div class="flex flex-col justify-center">
+			<ul
+				role="list"
+				class="grid grid-cols-1 justify-between mx-auto mb-24"
+			>
+				<Card
+					href="https://docs.astro.build/"
+					title="WORK"
+					body="this is the work page stuff ..."
+				/>
+			</ul>
+		</div>
+	</main>
+</Layout>
+
+<style></style>
