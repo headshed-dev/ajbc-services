@@ -2,30 +2,30 @@
 interface Props {
 	title: string;
 	body: string;
-	href: string;
+	// optional
+	href?: string;
 }
 
 const { href, title, body } = Astro.props;
 ---
 
-<li class=" bg-white rounded-lg shadow-md overflow-hidden w-96 m-5 mx-auto">
-	<a href={href} class="block">
+<li
+	id={title}
+	class="bg-white rounded-lg shadow-md overflow-hidden w-96 m-5 mx-auto"
+>
+	<a
+		href={href}
+		class="block"
+	>
 		<div class="p-4">
-
-		<h2 class="text-xl font-medium text-gray-800 mb-2">
-			{title}
-			<span>&rarr;</span>
-		</h2>
-		<p class="text-gray-600">
-			{body}
-		</p>
-
-
+			<h2 class="text-xl font-medium text-gray-800 mb-2">
+				{title}
+				<span>&rarr;</span>
+			</h2>
+			<p class="text-gray-600">
+				{body}
+			</p>
 		</div>
 	</a>
 </li>
-<style>
-
-	
-
-</style>
+<style></style>

@@ -1,6 +1,6 @@
----import { ViewTransitions } from 'astro:transitions';
+---
+import { ViewTransitions } from "astro:transitions";
 
- 
 interface Props {
 	title: string;
 }
@@ -13,34 +13,38 @@ const { title } = Astro.props;
 	<head>
 		<ViewTransitions />
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description">
+		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
 	<body class="text-center">
-		<header class="p-5 text-2xl bg-slate-50 sticky top-0 z-50">{title}</header>
+		<header class="p-5 text-2xl bg-slate-50 sticky top-0 z-50">
+			{title}
+		</header>
 		<slot />
-		<footer class="p-5 fixed bottom-0 left-0 w-full text-center text-sm bg-slate-100">AJBC Services &copy; {new Date().getFullYear()} | <a href="https://ajbc.co">AJBC Ltd</a></footer>
-	
-		<script type="module"> import { gsap } from "https://cdn.skypack.dev/gsap"; 
-		// use $astro/client instead of astro/client 
-		import { onMount } from $astro/client;
+		<footer
+			class="p-5 fixed bottom-0 left-0 w-full text-center text-sm bg-slate-100"
+		>
+			AJBC Services &copy; {new Date().getFullYear()} | <a
+				href="https://ajbc.co">AJBC Ltd</a>
+		</footer>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+			integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"></script>
+		<script>
+		</script>
 
-			onMount(() => { 
-				// use gsap here 
-				gsap.to(".logo-img", { duration: 100, x: 100 }); }); 
-		</script>	
-	
-	
-	
-	</body>
+		<!-- <script>
+gsap.to(".box", { x: 40, fill: 'blue', });
+
+		</script> -->
+	</body><style is:global>
+		body {
+			overflow-y: scroll;
+		}
+	</style>
 </html>
-<style is:global>
-
-body {
-  overflow-y: scroll;
-}
-
-</style>

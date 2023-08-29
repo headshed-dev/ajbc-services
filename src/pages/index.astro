@@ -1,51 +1,54 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
-// import { gsap } from "gsap";
 import Logo from "../components/Logo.astro";
-
-// gsap.to(".logo-img", { duration: 1, x: 100 });
 ---
 
 <Layout title="Welcome to AJBC Services.">
 	<main>
-		<div >
-			<Logo />
-		</div>
-			<!-- <h1>Welcome to <span class="text-gradient">AJBC Services</span></h1> -->
-			<!-- tailwind col centered -->
+		<Logo />
 
-			<div class="flex flex-col justify-center">
-				<ul
-					role="list"
-					class="grid grid-cols-1 md:grid-cols-2 justify-between mx-auto mb-24"
-				>
-					<Card
-						href="/intro"
-						title="INTRO"
-						body="Learn about AJBC Services."
-					/>
-					<Card
-						href="/work"
-						title="WORK"
-						body="Supercharge your business and life with our tailored services."
-					/>
-					<Card
-						href="/about"
-						title="ABOUT"
-						body="Find out more about who we are and where we're going."
-					/>
-					<Card
-						href="/contact"
-						title="CONTACT"
-						body="Come and say hi!"
-					/>
-				</ul>
-			</div>
+		<div class="flex flex-col justify-center">
+			<ul
+				role="list"
+				class="grid grid-cols-1 md:grid-cols-2 justify-between mx-auto mb-24"
+			>
+				<Card
+					href="/intro"
+					title="INTRO"
+					body="Learn about AJBC Services."
+				/>
+				<Card
+					href="/work"
+					title="WORK"
+					body="Supercharge your business and life with our tailored services."
+				/>
+				<Card
+					href="/about"
+					title="ABOUT"
+					body="Find out more about who we are and where we're going."
+				/>
+				<Card href="/contact" title="CONTACT" body="Come and say hi!" />
+			</ul>
+		</div>
 	</main>
 
+	<script>
+		const elements = [
+			".box",
+			".logo-img",
+			"#INTRO",
+			"#WORK",
+			"#ABOUT",
+			"#CONTACT",
+		];
+
+		gsap.from(elements, {
+			opacity: 0,
+			duration: 0.2,
+			delay: (i) => i * 0.2,
+			y: -30,
+		});
+	</script>
 	<style></style>
 </Layout>
-
-
-
