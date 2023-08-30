@@ -1,25 +1,74 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 import Logo from "../components/Logo.astro";
 ---
 
-<Layout title="Welcome to AJBC Services.">
+<Layout title="Working patterns.">
 	<main>
 		<Logo />
-		<!-- <h1>Welcome to <span class="text-gradient">AJBC Services</span></h1> -->
-		<!-- tailwind col centered -->
+		<div
+			class="bg-white rounded-lg shadow-md overflow-hidden w-96 m-5 mx-auto mb-40"
+		>
+			<div class="p-4">
+				<h2 class="text-xl font-medium text-gray-800 mb-2">
+					QUICK STARTUP
+				</h2>
+				<p class="text-gray-600 mb-5">
+					We aim to get you up and running as quickly as possible.
+					Using WordPress as as our preferred Content Management
+					technology and a host of readily available themes to suit
+					all budgets, we can get your site up and running quickly and
+					cost effectively, giving you control over your content
+					immediately.
+				</p>
 
-		<div class="flex flex-col justify-center">
-			<ul
-				role="list"
-				class="grid grid-cols-1 justify-between mx-auto mb-24"
-			>
-				<Card
-					title="WORK"
-					body="this is the work page stuff ..."
-				/>
-			</ul>
+				<p class="text-gray-600 mb-5">
+					Content Management gives you the customer a fully modifiable
+					web framework in which all textual and graphical content may
+					be changed in seconds. No developer or over worked systems
+					administrator needs be involved to rapidly update content
+					that can be delivered live to a web facing front end web
+					site in less time that it would take to raise a work request
+					to do the same.
+				</p>
+
+				<p class="text-gray-600 mb-5">
+					New content can be easily generated and existing documents
+					amended simply using either a WYSIWYG ( What You See Is What
+					You Get ) editor or direct access to raw ( HTML ) markup
+					language for power users.
+				</p>
+
+				<h2 class="text-xl font-medium text-gray-800 mb-2">
+					CONSULTANCY
+				</h2>
+
+				<p class="text-gray-600 mb-5">
+					It can be difficult knowing where and how to start when
+					setting up a new website or refreshing an old one.
+				</p>
+
+				<p class="text-gray-600 mb-5">
+					We give you the support and consultancy that won’t leave you
+					in the dark. We help you to manage and grow your site and on
+					line presence, taking the pain out of the technical bits
+					that could stall your progress.
+				</p>
+
+				<p class="text-gray-600 mb-5">
+					Our support is integral to that of our hosting, where this
+					is directly connected to the running of your site and to
+					include a reasonable period of time in accordance with an
+					agreed annual contract. So you need not be concerned to ask
+					for help when you need it.
+				</p>
+
+				<p class="text-gray-600 mb-5">
+					We charge by the hour for business and technical
+					consultancy, but an initial hour of consultancy is free so
+					don’t hold back, drop us a line.
+				</p>
+			</div>
 		</div>
 	</main>
 </Layout>

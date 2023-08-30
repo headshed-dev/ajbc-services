@@ -7,11 +7,15 @@ interface Props {
 }
 
 const { href, title, body } = Astro.props;
+
+
 ---
+
 
 <li
 	id={title}
 	class="bg-white rounded-lg shadow-md overflow-hidden w-96 m-5 mx-auto"
+	
 >
 	<a
 		href={href}

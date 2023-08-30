@@ -1,28 +1,50 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
+import Logo from "../components/Logo.astro";
 ---
 
-<Layout title="Welcome to AJBC Services.">
+<Layout title="Introducing AJBC Services.">
 	<main>
-		<a href="/">
-			<img
-			src="/ajbc.png"
-			alt="AJBC Services Logo"
-			class="w-56 rounded-full mx-auto p-5"
-			/>
-		</a>
-		<!-- <h1>Welcome to <span class="text-gradient">AJBC Services</span></h1> -->
-		<!-- tailwind col centered -->
+		<Logo />
+		<div
+			class="bg-white rounded-lg shadow-md overflow-hidden w-96 m-5 mx-auto mb-40"
+		>
+			<div class="p-4">
+				<!-- <h2 class="text-xl font-medium text-gray-800 mb-2">
+					About AJBC
+				</h2> -->
+				<p class="text-gray-600 mb-5">
+					We specialise in Content Managed Web Sites that suit your
+					needs, where you are in control of your own content.
+				</p>
 
-		<div class="flex flex-col justify-center">
-			<ul role="list" class="grid grid-cols-1  justify-between mx-auto mb-24">
-				<Card
-					title="INTRODUCING AJBC SERVICES"
-					body="this is the intro page stuff ..."
-				/>
+				<p class="text-gray-600 mb-5">
+					Getting you up and running with your website quickly and
+					trouble free.
+				</p>
 
-			</ul>
+				<p class="text-gray-600 mb-5">
+					Taking the smoke and mirrors out of Search Engine
+					Optimization (SEO): giving you control and putting you in
+					the driving seat to ensure industry standard and compliant
+					integration with Search Engines, ensuring the best possible
+					Search Rankings without incurring high costs.
+				</p>
+
+				<p class="text-gray-600 mb-5">
+					Setting you up with Analytics that show you where your site
+					traffic is coming from and going to and helping you shape
+					your site to gain maximum conversion.
+				</p>
+
+				<p class="text-gray-600 mb-5">
+					Giving you the support and consultancy that won’t leave you
+					in the dark: we help you manage and grow your site and on
+					line presence, taking the pain out of the technical bits
+					that could stall your progress and making it as easy as AJBC
+					to get the job done
+				</p>
+			</div>
 		</div>
 	</main>
 </Layout>
