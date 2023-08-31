@@ -1,34 +1,64 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
 import Logo from "../components/Logo.astro";
+// import { Image } from 'astro:assets';
+// import localBirdImage from '../../images/subfolder/localBirdImage.png';
+// import certImage from './images/certs.png';
+// import img from '../images/cert.png';
+
+// import { Image } from 'astro:assets';
+import certImage from "../assets/certs.png"; // Image is 1600x900
 ---
 
 <Layout title="Introducing AJBC Services.">
 	<main>
 		<Logo />
 		<div
-			class="bg-white rounded-lg shadow-md overflow-hidden w-96 m-5 mx-auto mb-40"
+			class="bg-white rounded-lg shadow-md overflow-hidden max-w-xl m-5 mx-auto mb-40"
 		>
 			<div class="p-4">
-				<!-- <h2 class="text-xl font-medium text-gray-800 mb-2">
-					About AJBC
-				</h2> -->
+				<h2 class="text-xl font-medium text-gray-800 mb-2">
+					AJBC Services
+				</h2>
+
 				<p class="text-gray-600 mb-5">
-					We specialise in Content Managed Web Sites that suit your
-					needs, where you are in control of your own content.
+					We consult with small businesses and not-for-profit
+					organisations advising on and providing App and website
+					design, hosting, SEO and social media strategies.
+				</p>
+
+				<p class="italic text-lg text-gray-600 mb-5">
+					We make it as easy as AJBC to get the job done
 				</p>
 
 				<p class="text-gray-600 mb-5">
-					Getting you up and running with your website quickly and
-					trouble free.
+					We give personal service alongside bespoke solutions that
+					reflect client values.
 				</p>
 
 				<p class="text-gray-600 mb-5">
-					Taking the smoke and mirrors out of Search Engine
-					Optimization (SEO): giving you control and putting you in
-					the driving seat to ensure industry standard and compliant
-					integration with Search Engines, ensuring the best possible
-					Search Rankings without incurring high costs.
+					We consult with small businesses and not-for-profit
+					organisations advising on and providing App and website
+					design, hosting, SEO and social media strategies.
+				</p>
+
+				<p class="text-gray-600 mb-5">
+					We give personal service alongside bespoke solutions that
+					reflect client values.
+				</p>
+
+				<p class="text-gray-600 mb-5">
+					We specialise in building apps and web sites that your
+					needs, where you are in control of your own content.suit
+				</p>
+
+				<p class="text-gray-600 mb-5">
+					Getting you up and running quickly and trouble free.
+				</p>
+
+				<p class="text-gray-600 mb-5">
+					Giving you control and putting you in the driving seat
 				</p>
 
 				<p class="text-gray-600 mb-5">
@@ -41,9 +71,55 @@ import Logo from "../components/Logo.astro";
 					Giving you the support and consultancy that won’t leave you
 					in the dark: we help you manage and grow your site and on
 					line presence, taking the pain out of the technical bits
-					that could stall your progress and making it as easy as AJBC
-					to get the job done
+					that could stall your progress.
 				</p>
+
+				<h2 class="text-xl font-medium text-gray-800 mb-2">
+					Canalside Life Coach
+				</h2>
+
+				<p class="text-gray-600 mb-5">
+					Working with the Canalside Life Coach, you will become more
+					resourceful by learning practical ways to alter how you
+					think about things
+				</p>
+
+				<p class="text-gray-600 mb-5"></p>
+				 I will compassionately coach you through life's challenges and
+				changes
+
+				<p class="text-gray-600 mb-5">
+					We will use Neuro Linguistic Programming techniques that
+					focus on positive changes
+				</p>
+
+				<div
+					class="bg-white rounded-lg shadow-md overflow-hidden w-96 mx-auto mb-40"
+				>
+					<div class="p-4">
+						<h2 class="text-xl text-gray-800 mb-2 mt-3">
+							Get started on your coaching journey today
+						</h2>
+						<a href="https://canalsidecoach.app">
+							<button
+								class="bg-transparent hover:bg-slate-100 text-slate-950 font-semibold py-2 px-4 border border-slate-500 hover:border-transparent rounded m-3"
+								>Find out more</button
+							>
+						</a>
+
+						<!-- <a href="https://example.com" class=" font-bold py-2 px-4 rounded">
+						Find out more
+					  </a> -->
+					</div>
+					<div class="m-3">
+						<img
+							src="/certs.png"
+							alt="Three logos: The American Board of Neuro-Linguistic
+						Programming, Coaching Division of the American Board Of NLP,
+						Time Line Therapy Association"
+						/>
+					</div>
+				</div>
 			</div>
 		</div>
 	</main>
