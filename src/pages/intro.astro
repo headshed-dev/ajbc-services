@@ -1,19 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Image } from "astro:assets";
 import Logo from "../components/Logo.astro";
-// import { Image } from 'astro:assets';
-// import localBirdImage from '../../images/subfolder/localBirdImage.png';
-// import certImage from './images/certs.png';
-// import img from '../images/cert.png';
-
-// import { Image } from 'astro:assets';
-import certImage from "../assets/certs.png"; // Image is 1600x900
 ---
 
 <Layout title="Introducing AJBC Services">
 	<main>
-		<Logo />
+		<Logo image="ajbc-orange.png"/>
 		<div
 			class="bg-white rounded-lg shadow-md overflow-hidden max-w-xl m-5 mx-auto mb-40"
 		>
@@ -38,7 +30,7 @@ import certImage from "../assets/certs.png"; // Image is 1600x900
 				</p>
 
 				<div
-					class="bg-white rounded-lg shadow-md overflow-hidden w-96 mx-auto mb-10"
+					class="bg-white rounded-lg shadow-md overflow-hidden mx-auto mb-10"
 				>
 					<div class="p-4">
 						<h2 class="text-xl text-gray-800 mb-2 mt-3">
@@ -47,7 +39,7 @@ import certImage from "../assets/certs.png"; // Image is 1600x900
 						<a href="/contact">
 							<button
 								class="bg-transparent hover:bg-slate-100 text-slate-950 font-semibold py-2 px-4 border border-slate-500 hover:border-transparent rounded m-3"
-								>contact us</button
+								>Contact Us</button
 							>
 						</a>
 					</div>
@@ -57,7 +49,7 @@ import certImage from "../assets/certs.png"; // Image is 1600x900
 				</p>
 
 				<p class="text-gray-600 mb-5">
-					building apps and web sites that suit your needs, where you
+					building apps and websites that suit your needs, where you
 					are in control of your own content
 				</p>
 
@@ -87,7 +79,7 @@ import certImage from "../assets/certs.png"; // Image is 1600x900
 				</h2>
 
 				<p class="text-gray-600 mb-5">
-					Working with the Canalside Life Coach, you will become more
+					Working with the <a href="https://www.canalsidecoach.app/">Canalside Life Coach</a>, you will become more
 					resourceful by learning practical ways to alter how you
 					think about things
 				</p>
@@ -102,10 +94,10 @@ import certImage from "../assets/certs.png"; // Image is 1600x900
 				</p>
 
 				<div
-					class="bg-white rounded-lg shadow-md overflow-hidden w-96 mx-auto mb-40"
+					class="bg-white rounded-lg shadow-md mx-auto mb-40"
 				>
 					<div class="p-4">
-						<h2 class="text-xl text-gray-800 mb-2 mt-3">
+						<h2 class="text-xl text-gray-800 mt-3">
 							Get started on your coaching journey today
 						</h2>
 						<a href="https://canalsidecoach.app">
@@ -115,12 +107,11 @@ import certImage from "../assets/certs.png"; // Image is 1600x900
 							>
 						</a>
 
-						<!-- <a href="https://example.com" class=" font-bold py-2 px-4 rounded">
-						Find out more
-					  </a> -->
+
 					</div>
-					<div class="m-3">
+					<div class="m-5">
 						<img
+							class="mx-auto p-12"
 							src="/certs.png"
 							alt="Three logos: The American Board of Neuro-Linguistic
 						Programming, Coaching Division of the American Board Of NLP,
