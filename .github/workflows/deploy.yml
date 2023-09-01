@@ -46,12 +46,12 @@ jobs:
     #   - name: firebase config
     #     run: echo "${{ secrets.FIREBASE_JSON_LIVE }}" | base64 -d > firebase.json
 
-    #   - uses: FirebaseExtended/action-hosting-deploy@v0
-    #     with:
-    #       repoToken: '${{ secrets.GITHUB_TOKEN }}'
-    #       firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_LIVE }}'
-    #       channelId: live
-    #       projectId: canalside-coach
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_LIVE }}'
+          channelId: live
+          projectId: ajbc-services
 
 
 
