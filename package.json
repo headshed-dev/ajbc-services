@@ -3,6 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
+    "tsc:show-config": "tsc --showConfig",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
@@ -12,7 +13,11 @@
   "dependencies": {
     "@astrojs/tailwind": "^5.0.0",
     "astro": "^3.0.3",
+    "astro-content": "^0.0.0-alpha.13",
     "gsap": "^3.12.2",
     "tailwindcss": "^3.3.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
   }
 }
