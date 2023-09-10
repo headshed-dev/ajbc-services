@@ -2,6 +2,9 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Logo from "../components/Logo.astro";
+import { getCollection } from 'astro:content';
+
+const collection = await getCollection('landing');
 ---
 
 <Layout title="Welcome to AJBC Services.">
@@ -13,22 +16,15 @@ import Logo from "../components/Logo.astro";
 				role="list"
 				class="grid grid-cols-1 md:grid-cols-2 justify-between mx-auto mb-24"
 			>
-				<Card
-					href="/intro"
-					title="INTRO"
-					body="Learn about AJBC Services."
-				/>
-				<Card
-					href="/work"
-					title="WORK"
-					body="What we can do for you."
-				/>
-				<Card
-					href="/about"
-					title="ABOUT"
-					body="Find out more about who we are and where we're going."
-				/>
-				<Card href="/contact" title="CONTACT" body="Come and say hi!" />
+				{
+					collection.map((item) => (
+						<Card
+							href={item.data.href}
+							title={item.data.title}
+							body={item.body}
+						/>
+					))
+				}
 			</ul>
 		</div>
 	</main>
